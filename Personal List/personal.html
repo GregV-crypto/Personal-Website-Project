@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Asset List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font awesome link for fonts-->
+    <!--5.0.0 for forex and crypto button-->
+    <!--Personal List style is linked-->
+    <link rel="stylesheet" href="personalStyle.css">
+</head>
+
+<div class = "topMenuBtns">
+    <!--Personal List. Link when button is pressed-->
+    <button class = "button Personal-List" id = "personalBtn">Personal List</button>
+    <button class = "button Forex" id = "forexBtn">Forex</button>
+    <button class = "button Stocks" id = "stocksBtn">Stocks</button>
+    <button class = "button Options" id = "optionsBtn">Options</button>
+    <button class = "button Crypto" id = "cryptoBtn">Crypto</button>
+    <script>
+        //Event listener for all buttons
+    document.getElementById("personalBtn").addEventListener("click", personalEvent);
+    function personalEvent(){
+            window.location.href = "C:\Users\gregv\Desktop\Coding-Files\Coding Files\StockProject\Personal_ListBtn\personal.html"
+    }
+    document.getElementById("forexBtn").addEventListener("click", forexEvent);
+    function forexEvent(){
+            window.location.href = "https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"
+    }
+    document.getElementById("stocksBtn").addEventListener("click", stockEvent);
+    function stockEvent(){
+            window.location.href = "https://www.investopedia.com/terms/s/stock.asp"
+    }
+    document.getElementById("optionsBtn").addEventListener("click", optionEvent);
+    function optionEvent(){
+            window.location.href = "https://www.investopedia.com/terms/o/option.asp"
+    }
+    document.getElementById("cryptoBtn").addEventListener("click", cryptoEvent);
+    function cryptoEvent(){
+            window.location.href = "https://www.investopedia.com/terms/c/cryptocurrency.asp"
+    }
+    </script>
+</div>
+
+<div><h1>Personal Asset List</h1></div>
+
+<div class = "entireBody">
+    <body>
+        <h2><em>Keep a running total of your assets below...</em></h2>
+        <form class = "form">
+            <!--the input tag takes in the actual value
+            Connected to a submit button-->
+            <input type = "text" class = "list-input">
+            <button class = "list-btn" type = "submit">
+                <i class = "fa-solid fa-circle-plus" id = "addBtn"></i>
+            </button>
+                <select name = "organize-list" class = "btn-options">
+                    <!--All the different choices that can be selected-->
+                    <option value = "all">All</option>
+                    <option value = "forex">Forex</option>
+                    <option value = "stocks">Stocks</option>
+                    <option value = "options">Options</option>
+                    <option value = "cryptos">Cryptocurrencies</option>
+                    <option value = "deleted">Deleted</option>
+                    <!-- <option class = "option" value = "date/time" id = 7>Date/Time</option> -->
+                </select>
+        </form>
+        <div class = "list-Container">
+            <ul class = "p-List" id = "10"></ul>
+        </div>
+        <!--Connecting html to src-->
+        <script src = "List.js"></script>
+    </body>
+</div>
+</html>
+

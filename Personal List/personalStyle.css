@@ -1,0 +1,212 @@
+/**
+    Greg Vincent
+    CSS for PersonalStyle.Css
+    1/11/22
+*/
+
+/*Top menu*/
+.topMenuBtns{
+    font-style: 120px;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: -60px;
+    position: relative;
+    color: white;
+}
+
+/*Top menu*/
+.topMenuBtns{
+    position: relative;
+    top: -200px;
+}
+
+body{
+    text-align: center;
+    /*Gradients always use the background-image property. Not color.*/
+    background-image: linear-gradient(black, grey);
+    padding: 10em; /*Padding based off the parent size. The higher the number, the larger the covered area is.*/
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*division for the entire body */
+.entireBody{
+    position: relative;
+    top: -50px;
+}
+
+/*.btn-options refers to drop down menu*/
+.btn-options{
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+}
+
+/*.btn-options refers to drop down menu*/
+.btn-options:focus{
+    background-color: black;
+    color:white;
+}
+
+/*refers to drop down list*/
+.organize-list:hover:focus{
+    display: inline-block;
+    background-color: white;
+    color:black;
+}
+
+
+/*text box*/
+.list-input{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 32px;
+    display: inline-block;
+    border: none;
+}
+
+/*.button refers to the button links in the header*/
+.button{
+    padding: 20px 32px;
+    font-size: .7em;
+    -webkit-appearance: button;
+}
+
+/*.button refers to the button links in the header*/
+.button:hover{
+    font-style: italic;
+    background-color: black;
+    color:white;
+}
+
+h2{
+    font-size: 1em;
+}
+
+/*list button is the actual button you press to add to the list*/
+.list-btn{
+    color: black;
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.list-btn:hover{
+    background: black;
+    color: white;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+
+
+h1{
+    position: relative;
+    font-size: 100px;
+    top: -370px;
+}
+
+/*used for spacing*/
+.entireBody{
+    position: relative;
+    top: -330px;
+}
+
+/*refers to all elements created in JavaScript*/
+.list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*refers to the actual list, not the entire element*/
+.p-List{
+    min-width: 30%;
+    list-style: none;
+}
+
+/*each individual element in the list*/
+.asset{
+    margin:0.5rem;
+    background:white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asset li{
+/*pushes buttons next to each other*/
+    flex: 1;
+}
+
+/*styling all buttons*/
+.stocks,
+.forex,
+.crypto,
+.options,
+.deleted{
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*Drop down list*/
+.stocks{
+    background: black;
+    color: white;
+}
+.forex{
+    background: black;
+    color:green;
+}
+.crypto{
+    background: black;
+    color: blue;
+}
+.options{
+    background: black;
+    color: red;
+}
+.deleted{
+    background: black;
+    color: white;
+}
+
+.fa-dollar-sign,
+.fa-euro-sign,
+.fa-bank,
+.fa-bitcoin,
+.fa-trash{
+    pointer-events: none;
+}
+
+/*Drop down list - Hover functions*/
+.stocks:hover{
+    background: white;
+    color: black;
+}
+.forex:hover{
+    background: white;
+    color: green;
+}
+.crypto:hover{
+    background: white;
+    color: blue
+}
+.options:hover{
+    background: white;
+    color:red;
+}
+.deleted:hover{
+    background:white;
+    color:black;
+}
+
