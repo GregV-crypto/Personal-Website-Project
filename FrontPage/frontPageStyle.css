@@ -1,0 +1,53 @@
+/**
+    Greg Vincent
+    1/4/22
+    Style sheet for website homepage 
+*/
+
+/*bg-Image class is made specifically for the background image. Not yet used*/
+
+/*Use a negative value to move up,*/
+.Header{
+    font-size: 90px;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    top: -210px;
+    margin-bottom: -210px;
+}
+
+.button{
+    border: none;
+    color: black;
+    padding: 15px 34px;
+    text-align: center;             
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    top: -220px;
+}
+
+.hNum{
+    font-style: italic;
+    font-size: 40px;
+}
+
+body{
+    text-align: center;
+    position: relative;
+    /*Gradients always use the background-image property. Not color.*/
+    background-image: linear-gradient(black, grey);
+    padding: 10em; /*Padding based off the parent size. The higher the number, the larger the covered area is.*/
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.button:hover{
+    background-color: grey;
+    color: white;
+}
