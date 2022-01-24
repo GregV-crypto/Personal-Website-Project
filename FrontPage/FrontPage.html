@@ -1,0 +1,62 @@
+<!--Front page of the Amateur Investor website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Investor</title>
+    <!--The first css page is now linked to the html-->
+    <link rel="stylesheet" href="frontPageStyle.css">
+</head>
+<!--Div class is used for background image... once it is sorted out-->
+<div class = "header+Btns">
+    <!--All buttons created here. Styled in CSS-->
+    <!--Each different button brings the user to a different html page with the content
+    using JavaScript-->
+    <button class = "button Personal-List" id = "personalBtn">Personal List</button>
+    <button class = "button Forex" id = "forexBtn">Forex</button>
+    <button class = "button Stocks" id = "stocksBtn">Stocks</button>
+    <button class = "button Options" id = "optionsBtn">Options</button>
+    <button class = "button Crypto" id = "cryptoBtn">Crypto</button>
+    <script>
+        //Event listener for all buttons
+       document.getElementById("personalBtn").addEventListener("click", personalEvent);
+       function personalEvent(){
+            window.location.href = "C:\Users\gregv\Desktop\Coding-Files\Coding Files\StockProject\Personal_ListBtn\personal.html"
+       }
+       document.getElementById("forexBtn").addEventListener("click", forexEvent);
+       function forexEvent(){
+            window.location.href = "https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"
+       }
+       document.getElementById("stocksBtn").addEventListener("click", stockEvent);
+       function stockEvent(){
+            window.location.href = "https://www.investopedia.com/terms/s/stock.asp"
+       }
+       document.getElementById("optionsBtn").addEventListener("click", optionEvent);
+       function optionEvent(){
+            window.location.href = "https://www.investopedia.com/terms/o/option.asp"
+       }
+       document.getElementById("cryptoBtn").addEventListener("click", cryptoEvent);
+       function cryptoEvent(){
+            window.location.href = "https://www.investopedia.com/terms/c/cryptocurrency.asp"
+       }
+    </script>
+    <h1 class = " Header "> The Investor </h1>
+    <!--All buttons are meant to be in the header.-->
+</div>
+<body>
+    <h2><em>Taking the best out of two Interests</em></h2>
+    <p>The purpose of the website is to measure my progess as I grow
+        as a website developer. It's functional purpose however is to be that of a basic investment website
+        built from the ground up built in pure HTML, CSS, and Javascript. 
+    </p>
+    <h2 class = "hNum JS-Header"> JavaScript</h2>
+    <p>JavaScript is used all of the background operations. Everything from creating
+        the user's personal list of investments, to fetching data from APIS for each webpage. Simulating a real world 
+        investment website is the goal. 
+    </p>
+    <h2 class = " hNum HTML-CSS"> HTML-CSS</h3>
+        <p>HTML and CSS are of course used for the website's actual creation and styling. </p>
+</body>
+</html>
