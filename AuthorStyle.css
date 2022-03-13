@@ -1,0 +1,70 @@
+/*
+    Greg Vincent
+    CSS for AuthorPage.
+    2/27/2022
+*/
+
+/*Top menu*/
+.topMenuBtns{
+    font-style: 120px;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: -50px;
+    position: relative;
+    color: white;
+}
+
+/*Top menu*/
+.topMenuBtns{
+    position: relative;
+    top: -150px;
+    bottom: 30px;
+}
+
+h1{
+    position: relative;
+    font-size: 100px;
+    top: -270px;
+}
+
+/*division for the entire body */
+.entireBody{
+    position: relative;
+    top: -100px;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+/*refers to the button links in the header*/
+.button{
+    padding: 20px 32px;
+    font-size: .7em;
+    -webkit-appearance: button;
+}
+
+/*.button refers to the button links in the header*/
+.button:hover{
+    font-style: italic;
+    background-color: black;
+    color:white;
+}
+
+body{
+    text-align: center;
+    /*Gradients always use the background-image property. Not color.*/
+    background-image: linear-gradient(black, grey);
+    padding: 10em; /*Padding based off the parent size. The higher the number, the larger the covered area is.*/
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    top: -200px;
+    position: relative;
+    /* bottom: -60px; */
+}
+
+.paragraph{
+    top: -200px;
+    /* bottom: -60px; */
+}
